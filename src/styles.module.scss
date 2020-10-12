@@ -1,0 +1,15 @@
+
+    $main-color: rgba(255, 0, 0, 0.603);  
+    $main-font-size:2em;
+  .test {
+    margin: 2em;
+    padding: 0.5em;
+    border: 2px solid #000;
+    font-size: $main-font-size;
+    text-align: center;
+    color:$main-color
+  }
+  .banner{
+    color: $main-color;
+    font-size: $main-font-size;
+  }
