@@ -1,11 +1,23 @@
-import React from 'react'
-import gallery from '../css/gallery.module.scss'
+import React, { Fragment } from 'react'
 
 const returnSize = (x) => (!x ? '360px' : `${x}px`)
+
 export default function ImagePreview({ image, size }) {
   return (
-    <div className={gallery.main}>
-      <img style={{ width: returnSize(size) }} src={image} alt={image} />
-    </div>
+    <>
+      <img
+        style={{
+          width: !size ? "360px" : returnSize(size),
+          height: !size ? "180px" :  returnSize(size / 2),
+          display: 'flex',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          padding: 0,
+          opacity: 0.9
+        }}
+        src={image}
+        alt={image}
+      />
+    </>
   )
 }
