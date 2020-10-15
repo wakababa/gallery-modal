@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default function Button({
   index,
   setIndex,
@@ -16,19 +15,21 @@ export default function Button({
             ? index === 0
               ? 0
               : index - 1
-            : index === images.length -1
-            ? images.length -1
+            : index === images.length - 1
+            ? images.length - 1
             : index + 1
         )
       }
       style={{
-        marginRight: '1px',
-        marginLeft: '1px',
-        width: !size
-          ? 360 / (images.length + 10) + 'px' + 'px'
-          : size / (images.length + 10) + 'px',
+        marginRight: upbutton ? 'auto' :'1px',
+        marginLeft:  !upbutton ? 'auto' :'1px',
+        cursor:'pointer',
+        border: '1px solid grey',
         background: 'none',
-        border: '1px solid grey'
+        outline: 'none',
+        width: !size
+          ? 360 / (images.length + 8) + 'px' + 'px'
+          : size / (images.length + 8) + 'px'
       }}
     >
       <Icon />

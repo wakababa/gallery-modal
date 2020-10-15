@@ -13,3 +13,9 @@
     color: $main-color;
     font-size: $main-font-size;
   }
+  .galleryButton:focus{
+    outline: none;
+    border: none;
+    background: black;
+  }
+    

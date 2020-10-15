@@ -3,7 +3,8 @@ import styles from './styles.module.scss'
 
 // COMPONENTS
 import ImagePreview from './components/ImagePreview'
-import  ImageBar from './components/ImageBar'
+import ImageBar from './components/ImageBar'
+import PreviewModal from './components/PreviewModal'
 
 export const Banner = ({ text }) => (
   <>
@@ -13,9 +14,25 @@ export const Banner = ({ text }) => (
   </>
 )
 
-export const Gallery = ({ images, size, index, css, setIndex }) => (
+export const Gallery = ({
+  images,
+  size,
+  index,
+  css,
+  setIndex,
+  openModal,
+  setopenModal
+}) => (
   <div>
-    <ImagePreview css={css} size={size} image={images[index]} />
+    <ImagePreview
+      setopenModal={setopenModal}
+      css={css}
+      size={size}
+      image={images[index]}
+    />
     <ImageBar size={size} index={index} setIndex={setIndex} images={images} />
+    {openModal ? (
+      <PreviewModal setopenModal={setopenModal} image={images[index]} />
+    ) : null}
   </div>
 )

@@ -3,15 +3,19 @@ import { BsChevronRight, BsChevronLeft } from 'react-icons/bs'
 import Button from './Button'
 
 export default function ImageBar({ images, setIndex, index, size }) {
-
   const ImageBarDivStyle = (size) => ({
     display: 'flex',
     width: !size ? '360px' : size + 'px',
-    marginTop: '1px',
+    marginTop: '3px',
     marginLeft: 'auto',
     marginRight: 'auto'
   })
-
+  const ImageBarImageStyle = (index, key) => ({
+    margin: '1px',
+    cursor: 'pointer',
+    borderBottom: key === index ? '3px solid red' : 'none',
+    marginBottom: key === index ? '-3px' : ''
+  })
 
   return (
     <div style={ImageBarDivStyle(size)}>
@@ -26,12 +30,7 @@ export default function ImageBar({ images, setIndex, index, size }) {
       {images.map((item, key) => (
         <img
           key={key}
-          style={{
-            margin: '1px',
-            cursor: 'pointer',
-            borderBottom: key === index ? "3px solid red" : "none",
-            marginBottom:key === index ? "-3px" : "",
-          }}
+          style={ImageBarImageStyle(index, key)}
           width={
             !size
               ? 360 / (images.length + 1) + 'px'
