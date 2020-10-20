@@ -6,7 +6,7 @@ export default function Logo({ className }) {
       <svg
         id='Logo'
         xmlns='http://www.w3.org/2000/svg'
-        width='348'
+        width='90%'
         height='49'
         viewBox='0 0 348 49'
         className={className}
@@ -59,7 +59,7 @@ export default function Logo({ className }) {
       </svg>
       <svg
         xmlns='http://www.w3.org/2000/svg'
-        width='348'
+        width='90%'
         height='1'
         viewBox='0 0 348 1'
         style={{display:"flex",marginLeft:"auto",marginRight:"auto"}}
@@ -69,7 +69,7 @@ export default function Logo({ className }) {
           data-name='Line 1'
           x2='348'
           transform='translate(0 0.5)'
-          fill='none'
+          fill='red'
           stroke='#707070'
           stroke-width='1'
         />

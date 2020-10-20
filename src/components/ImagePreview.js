@@ -9,7 +9,7 @@ export default function ImagePreview({ image, size, setopenModal }) {
         style={{
           width: !size ? '360px' : returnSize(size),
           height: !size ? '180px' : returnSize(size / 2),
-          outline: '1px solid grey',
+          outline: '1px solid #707070',
           display: 'flex',
           marginLeft: 'auto',
           marginRight: 'auto',

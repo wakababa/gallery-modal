@@ -5,7 +5,7 @@ export const Home =
 > Gallery-Modal design for you save your time ! Just install it and use. Lightweight and usefull.
 
 [![NPM](https://img.shields.io/npm/v/gallery-modal.svg)](https://www.npmjs.com/package/gallery-modal) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
+[![NPM](https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ei-sc-github.svg/30px-Ei-sc-github.svg.png)](https://www.github.com/wakababa)
 ## Install
 
 ~~~bash

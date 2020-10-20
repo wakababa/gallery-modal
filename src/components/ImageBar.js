@@ -13,8 +13,9 @@ export default function ImageBar({ images, setIndex, index, size }) {
   const ImageBarImageStyle = (index, key) => ({
     margin: '1px',
     cursor: 'pointer',
-    borderBottom: key === index ? '3px solid red' : 'none',
-    marginBottom: key === index ? '-3px' : ''
+    border:'1px solid #707070',
+    borderBottom: key === index ? '1px solid red' : '',
+    marginBottom: key === index ? '-1px' : ''
   })
 
   return (
