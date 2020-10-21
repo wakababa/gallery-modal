@@ -6,7 +6,7 @@ import { tomorrow } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import {Gallery} from 'gallery-modal'
 
 const Home = `
-# GALLERY-MODAL
+# Gallery-Modal
 
 > Gallery-Modal design for you save your time ! Just install it and use. Lightweight and usefull.
 
@@ -24,7 +24,7 @@ const Second = `
 ~~~js
 import React, { useState } from 'react'
 
-import { Banner, Gallery } from 'gallery-modal'
+import { Gallery } from 'gallery-modal'
 
 export default function App() {
   const [index, setIndex] = useState(0)

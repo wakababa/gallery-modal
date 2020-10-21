@@ -1,4 +1,4 @@
-# gallery-modal
+# Gallery-Modal
 
 > Component Library For Gallery
 
@@ -15,14 +15,13 @@ npm install --save gallery-modal
 ```jsx
 import React, { useState } from 'react'
 
-import { Banner, Gallery } from 'gallery-modal'
+import { Gallery } from 'gallery-modal'
 
 export default function App() {
   const [index, setIndex] = useState(0)
   const [openModal, setopenModal] = useState(false)
   return (
     <>
-      <Banner text='Welcome To Gallery-Modal' />
       <Gallery
         setIndex={setIndex}
         size="500"
