@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 import { Banner, Gallery } from 'gallery-modal'
-import Sidebar from "./components/Sidebar"
 import Content from './Container/Content'
 export default function App() {
   const [index, setIndex] = useState(0)

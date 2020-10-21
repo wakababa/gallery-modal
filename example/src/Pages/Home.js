@@ -42,6 +42,10 @@ export default function App() {
 }
 
 ~~~
+
+### Screenshots from App
+![Gallery Screenshots](https://firebasestorage.googleapis.com/v0/b/karamankaraman.appspot.com/o/1.png?alt=media&token=e4fb4758-72f6-4fbf-a87d-3dec5cb9f621)
+
 ## License
 
 MIT © [wakababa](https://github.com/wakababa)
