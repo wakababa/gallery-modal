@@ -6,20 +6,21 @@ import { tomorrow } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import {Gallery} from 'gallery-modal'
 
 const Home = `
-# React-Gallery-Modal
+## React-Gallery-Modal
 
-> Gallery-Modal design for you save your time ! Just install it and use. Lightweight and usefull.
+> Gallery-Modal design for you save your time ! 
+Just install it and use. Lightweight and usefull.
 
 [![NPM](https://img.shields.io/npm/v/gallery-modal.svg)](https://www.npmjs.com/package/gallery-modal) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![NPM](https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ei-sc-github.svg/30px-Ei-sc-github.svg.png)](https://www.github.com/wakababa)
-## Install
+### Install
 
 ~~~bash
 npm install --save react-gallery-modal
 ~~~
 `
 const Second = `
-## Usage
+### Usage
 
 ~~~js
 import React, { useState } from 'react'
@@ -50,7 +51,7 @@ export default function App() {
 
 ~~~
 
-## License
+### License
 
 MIT © [wakababa](https://github.com/wakababa)
 `
@@ -75,7 +76,7 @@ const renderers = {
     <ReactMarkdown renderers={renderers} plugins={[gfm]} children={Home} />
     <Gallery
       setIndex={setIndex}
-      size='500'
+      size={window.innerWidth > 1200 ? 500 : 350}
       index={index}
       openModal={openModal}
       setopenModal={setopenModal}
