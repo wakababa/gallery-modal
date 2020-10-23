@@ -1,6 +1,6 @@
 export const Home =
 `
-# GALLERY-MODAL
+# React-GALLERY-MODAL
 
 > Gallery-Modal design for you save your time ! Just install it and use. Lightweight and usefull.
 
@@ -9,7 +9,7 @@ export const Home =
 ## Install
 
 ~~~bash
-npm install --save gallery-modal
+npm install --save react-gallery-modal
 ~~~
 
 ## Usage

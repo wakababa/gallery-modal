@@ -1,4 +1,4 @@
-# Gallery-Modal
+# React-Gallery-Modal
 
 > Component Library For Gallery
 
@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save gallery-modal
+npm install --save react-gallery-modal
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install --save gallery-modal
 ```jsx
 import React, { useState } from 'react'
 
-import { Gallery } from 'gallery-modal'
+import { Gallery } from 'react-gallery-modal'
 
 export default function App() {
   const [index, setIndex] = useState(0)
