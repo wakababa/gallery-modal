@@ -4,7 +4,6 @@ import gfm from 'remark-gfm'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { tomorrow } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import {Gallery} from 'gallery-modal'
-
 const Home = `
 ## Gallery-Modal
 
@@ -73,6 +72,7 @@ const renderers = {
   const [openModal, setopenModal] = useState(false)
   return (
     <>
+    <Button>Wow</Button>
     <ReactMarkdown renderers={renderers} plugins={[gfm]} children={Home} />
     <Gallery
       setIndex={setIndex}
